@@ -1,3 +1,7 @@
+.corpo{
+	background-color: white;
+}
+
 .navbar{
 	background: #ccd7ee;
 }
@@ -10,11 +14,87 @@
 }
 
 #logo{
-	max-width: 330px;
+	max-width: 150px;
 }
 
-.caixa{
-	padding: 30px 0;
-	border-bottom: 1px solid #e5e5e5;
-	background: white;
+article {
+	float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #f1f1f1;
+	height: 400px; /* only for demonstration, should be removed */
+  }
+  
+#capa-noticia{
+	margin-top: 10px;
+	width: 660px;
 }
+
+.enuciado-noticia{
+	width: 400px;
+
+}
+
+.img-capa-noticia{
+	width: 250px;
+	float: right;
+	margin-top: -180px;
+	/* max-width: 80%; */
+	/* float: left; */
+}
+
+.caixa-conteudo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.artigos-pg-inicial{
+	width: 660px;
+	/* float: left; */
+}
+
+
+/* CONFIGURAÇÃO DO INDEX */
+
+#telefones h3{
+	padding-bottom: 5px;
+ }
+
+#telefones{
+	padding-top: 15px;
+	width: 200px;
+	margin-top: 380px;
+}
+
+/* Formanta lista de notícias */
+
+/* #lista-noticias li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-noticias li a img{
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a{
+	text-decoration: none;
+}
+
+#lista-noticias li a h3{
+	padding: 0;
+	font-size: 0.8em;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+	font-size: 0.7em;
+}
+
+#lista-noticias li:hover{
+	background-color: #eee;
+	cursor: pointer;
+} */
