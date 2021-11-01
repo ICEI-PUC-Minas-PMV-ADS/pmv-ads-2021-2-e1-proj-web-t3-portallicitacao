@@ -5,25 +5,30 @@ body{
 
 #container{
 	/*border: 1px solid red;*/
-	width: 750px;
+	width: 1120px;
 	margin: 0 auto;
 }
 
-#topo{
-	/*border: 1px solid black;*/
-	padding: 25px 0 0 0;
-	height: 150px;
-	background: url('../imagens/detalhe-topo.png') no-repeat right top;
+.topo{
+	padding: 10px 0 0 0;
+	height: 180px;
+	/* background: url('../imagens/detalhe-topo.png') no-repeat right top; */
 }
 
 .logo{
-    margin-top: 30px;
+    margin-top: 45px;
 	width: 152px;
 	height: 76px;
-	/* background: url('../imagens/logo.png') no-repeat center;      */
-	/* Recurso utilizado para esconder o título dentro da tag h1 e que será exibido somente se o estilo não
-		for carregado. */
-	/* text-indent: -3000px; */
+}
+
+.cls-login{
+	margin-top: 60px;
+	width: 50px;
+	color: white;
+}
+
+.cls-login span{
+	width: 60px;
 }
 
 .secao-inicial{
@@ -33,6 +38,21 @@ body{
 .img-fluid{
     width: 140px;
     height: 140px;
+}
+
+.img-lei{
+	width: 140px;
+	height: 140px;
+}
+
+.img-proc-licitacao{
+	width: 200px;
+	height: 140px;
+}
+
+.img-newspaper{
+	width: 120px;
+	height: 140px;
 }
 
 /* Barra de navegação */
