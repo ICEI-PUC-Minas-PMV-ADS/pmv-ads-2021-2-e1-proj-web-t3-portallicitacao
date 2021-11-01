@@ -1,99 +1,56 @@
-.corpo{
-	background-color: white;
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url('../imagens/fundo.png') repeat-x left top;
 }
 
-.navbar{
-	background: #ccd7ee;
+#container{
+	width: 1120px;
+	margin: 0 auto;
 }
 
-#home{
-	height: 320px;
-	padding: 22px 0 12px 0;
-	/* background: #ffd633; */
+.topo{
+	padding: 10px 0 0 0;
+	height: 180px;
+	float: right;
+}
+
+.logo{
+	float: left;
+    margin-top: 45px;
+	width: 152px;
+	height: 76px;
+}
+
+.cls-login{
+	margin-top: 60px;
+	width: 50px;
 	color: white;
 }
 
-#logo{
-	max-width: 150px;
+.cls-login span{
+	width: 60px;
 }
 
-article {
-	float: left;
-	padding: 20px;
-	width: 70%;
-	background-color: #f1f1f1;
-	height: 400px; /* only for demonstration, should be removed */
-  }
-  
-#capa-noticia{
-	margin-top: 10px;
-	width: 660px;
+.secao-inicial{
+    margin-top: 100px;
 }
 
-.enuciado-noticia{
-	width: 400px;
-
+.img-fluid{
+    width: 140px;
+    height: 140px;
 }
 
-.img-capa-noticia{
-	width: 250px;
-	float: right;
-	margin-top: -180px;
-	/* max-width: 80%; */
-	/* float: left; */
+.img-lei{
+	width: 140px;
+	height: 140px;
 }
 
-.caixa-conteudo{
-	background: #fff;
-	padding: 5px;
-	margin-top: 5px;
-}
-
-.artigos-pg-inicial{
-	width: 660px;
-	/* float: left; */
-}
-
-/* CONFIGURAÇÃO DO INDEX */
-
-#telefones h3{
-	padding-bottom: 5px;
- }
-
-#telefones{
-	padding-top: 15px;
+.img-proc-licitacao{
 	width: 200px;
-	margin-top: 380px;
+	height: 140px;
 }
 
-/* Formanta lista de notícias */
-
-/* #lista-noticias li{
-	padding: 2px;
-	border-bottom: 1px solid #ccc;
-	height: 62px;
+.img-newspaper{
+	width: 120px;
+	height: 140px;
 }
-
-#lista-noticias li a img{
-	float: left;
-	margin: 5px;
-}
-
-#lista-noticias li a{
-	text-decoration: none;
-}
-
-#lista-noticias li a h3{
-	padding: 0;
-	font-size: 0.8em;
-	color: #3e7ab9;
-}
-
-#lista-noticias li a p{
-	font-size: 0.7em;
-}
-
-#lista-noticias li:hover{
-	background-color: #eee;
-	cursor: pointer;
-} */

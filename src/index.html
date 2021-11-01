@@ -15,103 +15,91 @@
 
         <title>Portal de Licitações</title>
     </head>
-    <body class="corpo">
+    <body>
         <header>
-            <nav class="navbar navbar-expand-md">
-                <div class="container">
-                    <!-- Logo -->
-                    
-                    <a href="index.html" class="navbar-brand">
-                        <img src="imagens/logo.png" id="logo">
-                    </a>
-
-                    <!-- menu hamburguer -->
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-      
-                    <!-- navegação -->
-                    <div class="collapse navbar-collapse" id="nav-principal">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Licitações</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Notícias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Indice 4</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header> <!-- Fim do cabeçalho -->
-
-        <section class="caixa">
-            <div class="container">
+            <!-- Início do conteiner -->
+            <div id="container">
                 <div class="row">
-                <div id="dados-contato" class="col-md-6 d-flex">
-                    <div id="conheca-escola">
-                        <h2>CONHEÇA NOSSA ESCOLA</h2>
-                        <h3>C.E.I. Pequenos Brilhantes</h3>
-                        <span>
-                            Para conhecer um pouco mais sobre nossa proposta pedagógica e espaço físico, preencha o formulário através do link abaixo e agende um horário.
-                        </span>
-                        <span>Entraremos em contato para confirmar o agendamento!</span>
-                                               
+                    <div id="topo" class="col-md-4">
+                        <img class="logo" src="imagens/logo.png" alt="">
+                    </div> <!-- Fim do topo -->
+                    <div class="cls-login col-md-4" align="center">
+                        <span class="far fa-user-circle fa-3x"></span>
+                        <p class="pt-2">Entrar</p>
                     </div>
-                    <div id="telefones">
-                        <img src="imagens/capa-noticia.jpg" class="img-fluid">
-                    </div>
-                </div>
-                    <div id="mapa" class="col-md-6 d-flex">
-                        
+                    <div class="col-md-4" align="center">
+                        <img class="topo" src="imagens/detalhe-topo.png" alt="Continente brasileiro">
                     </div>
                 </div>
             </div>
-        </section>    
+        </header>
+        <section>
+            <div class="container marketing secao-inicial">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-fluid img-lei d-flex" src="imagens/lei.png" alt="Lei sobre licitações">
+                        <h2 class="pt-4">O que é licitação pública</h2>
+                        <p>Licitação é o procedimento administrativo formal regra que se estabelece de forma prévia às contratações de serviços, aquisições de produtos, ou até mesmo para registrar preços para contratações futuras pelos entes da Administração Pública direta ou indireta.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver mais »</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-fluid img-proc-licitacao pt-4" src="imagens/capa-noticia.jpg" alt="Processos públicos licitatórios">
+                        <h2 class="pt-4">Processos licitatórios</h2>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver mais »</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-fluid img-newspaper pt-4" src="imagens/newspaper.png" alt="Notícias sobre licitações públicas">
+                        <h2 class="pt-4">Notícias</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver mais »</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+              
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Entendendo a lei 8.666. <span class="text-muted"></span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" alt="Entendo a nova lei" style="width: 500px; height: 300px;" src="imagens/entendendo-a-lei-8666.jpg" data-holder-rendered="true">
+                    </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">O que muda na nova lei sobre processos licitatórios.<span class="text-muted"></span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/nova-lei-de-licitacoes.jpg" data-holder-rendered="true" style="width: 500px; height: 300px;">
+                    </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Processo licitatório! <span class="text-muted">Uma nova oportunidade para o seu negócio.</span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/chamamento-publico.png" data-holder-rendered="true" style="width: 500px; height: 300px;">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+        
+              </div>
+        </section>
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
+
 </html>
-
-
-
-<!-- Início da caixa de lista de notícias -->
-<!-- <div class="caixa col-md-4">
-    <h2>Mundo</h2>
-    <div class="caixa-conteudo d-flex">
-        <ul id="lista-noticias">
-            <li>
-                <a href="index.html">
-                    <img src="imagens/cidade.jpg" width="80">
-                    <h3>TJMG abre novas oportunidades</h3>
-                    <p>Lorem Ipsum is simply dummy text </p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <img src="imagens/mundo.jpg" width="80">
-                    <h3>Portas abertas para o mundo</h3>
-                    <p>Lorem Ipsum is simply dummy text </p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <img src="imagens/taxi.jpg" width="80">
-                    <h3>Oportunidades para taxistas</h3>
-                    <p>Lorem Ipsum is simply dummy text </p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <img src="imagens/tecnologia.jpg" width="80">
-                    <h3>NOVAS TECNOLOGIAS</h3>
-                    <p>Lorem Ipsum is simply dummy text </p>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div> Início da caixa de lista de notícias -->
