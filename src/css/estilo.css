@@ -3,11 +3,6 @@ body{
 	background: #fff url('../imagens/fundo.png') repeat-x left top;
 }
 
-#container{
-	width: 1120px;
-	margin: 0 auto;
-}
-
 .topo{
 	padding: 10px 0 0 0;
 	height: 180px;
@@ -15,8 +10,6 @@ body{
 }
 
 .logo{
-	float: left;
-    margin-top: 45px;
 	width: 152px;
 	height: 76px;
 }
