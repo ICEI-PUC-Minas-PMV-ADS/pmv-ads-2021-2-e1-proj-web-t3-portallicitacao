@@ -1,11 +1,11 @@
 body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #fff url('../imagens/fundo.png') repeat-x left top;
+	background: #fff url('../imagens/fundo1.png') repeat-x left top;
 }
 
 .topo{
 	padding: 10px 0 0 0;
-	height: 180px;
+	height: 130px;
 	float: right;
 }
 
