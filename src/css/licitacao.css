@@ -1,0 +1,56 @@
+/* CSS reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url('../imagens/fundo1.png') repeat-x left top;
+}
+
+header{
+    height: 180px;
+}
+
+.topo{
+	padding: 10px 0 0 0;
+	height: 130px;
+	float: right;
+}
+
+.logo{
+	width: 152px;
+	height: 76px;
+}
+
+.content{
+    width: calc(76% - 8px);
+    height: 500px;
+    margin: 8px;
+    display: inline-block;
+    border: #000 1px solid;
+}
+
+.content-aside{
+    width: calc(22% - 8px);
+    height: 500px;
+    margin: 8px;
+    padding: 5px;
+    display: inline-block;
+    border: #888 1px solid;
+}
+
+.content-aside label{
+    font-size: 0.8em;
+    width: 100%;
+    float: left;
+}
+
+#lfiltro{
+    font-size: 0.8em;
+    width: 100%;
+    padding: 5px 0;
+    float: left;
+}
