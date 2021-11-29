@@ -29,21 +29,30 @@ header{
     width: 90%;
     margin: auto;
     padding: 10px;
-    border: #000 1px solid;
-    background-color: burlywood;
+    /* border: #000 1px solid; */
+    /* background-color: burlywood; */
 }
 
-.parag1-noticia, .parag2-noticia{
+.parag1-noticia, .parag2-noticia, .parag3-noticia{
     text-align: justify;
 }
 
-.img-noticia-principal-1{
+.img-noticia-topo{
     float: right;
     width: 300px;
     padding-left: 10px;
 }
 
+.img-noticia-central{
+	margin: 10px auto 20px auto;
+	width: 50%;
+	height: 25%;
+	max-width: 450px;
+	max-height: 250px;
+}
+
 .caixa{
+	min-width: 300px;
 	margin: 10px 0;
 	padding: 5px;
 	background: #f3f3f3 url('../imagens/fundo-caixa.png');
@@ -64,29 +73,27 @@ header{
 .lista-noticias li{
 	padding: 2px;
     border-bottom: 1px solid #ccc;
-	height: 68px;
-}
-
-.lista-noticias li a {
-	float: left;
-	/* margin: 5px; */
+	height: 62px;
 }
 
 .lista-noticias li a{
+	float: left;
+	width: 280px;
+	padding: 2px;
 	text-decoration: none;
 }
 
 .img-noticia{
 	float: left;
     width: 80px;
-	/* margin: 5px; */
+	margin-right: 5px;
 }
 
 .lista-noticias li a h3{
+	width: 180px;
     float: left;
-	padding: 0;
 	font-size: 0.8em;
-	color: #3e7ab9;
+	color: midnightblue;
 }
 
 .lista-noticias li a p{
@@ -98,15 +105,47 @@ header{
 	cursor: pointer;
 }
 
-.barra-lateral label{
-    font-size: 0.8em;
-    width: 100%;
-    float: left;
+/* ÁREA DE COMENTÁRIOS */
+
+.conteudo-comentarios{
+	height: 300px;
+	border-radius: 8px;
+	border: 6px solid #ccc;
+	background-color: white;
 }
 
-/* #lfiltro{
+/* BARRA LATERAL */
+
+.barra-lateral{
+	background-color:rgb(238, 236, 236);
+	border-radius: 5px;
+	/* border: 1px solid; */
+}
+
+.conteudo-barra-lateral{
+	padding: 5px 0;
+}
+
+.barra-lateral span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: midnightblue;
+	padding-top: 3px;
+	margin-top: 7px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid;
+}
+
+.barra-lateral label{
+	padding-top: 5px;
+    font-size: 0.8em;
+	float: left;
+}
+
+#lfiltro{
     font-size: 0.8em;
     width: 100%;
-    padding: 5px 0;
+    padding: 3px 0;
     float: left;
-} */
+}
