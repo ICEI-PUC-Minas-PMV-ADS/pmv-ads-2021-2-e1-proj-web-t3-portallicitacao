@@ -2,7 +2,7 @@
 *, *:before, *:after { 
     margin:0;
     padding:0;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body{
@@ -26,31 +26,87 @@ header{
 }
 
 .content{
-    width: calc(76% - 8px);
-    height: 500px;
-    margin: 8px;
-    display: inline-block;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
     border: #000 1px solid;
+    background-color: burlywood;
 }
 
-.content-aside{
-    width: calc(22% - 8px);
-    height: 500px;
-    margin: 8px;
-    padding: 5px;
-    display: inline-block;
-    border: #888 1px solid;
+.parag1-noticia, .parag2-noticia{
+    text-align: justify;
 }
 
-.content-aside label{
+.img-noticia-principal-1{
+    float: right;
+    width: 300px;
+    padding-left: 10px;
+}
+
+.caixa{
+	margin: 10px 0;
+	padding: 5px;
+	background: #f3f3f3 url('../imagens/fundo-caixa.png');
+}
+
+.caixa-conteudo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/* Formanta lista de notícias */
+
+.lista-noticias{
+    list-style: none;
+}
+
+.lista-noticias li{
+	padding: 2px;
+    border-bottom: 1px solid #ccc;
+	height: 68px;
+}
+
+.lista-noticias li a {
+	float: left;
+	/* margin: 5px; */
+}
+
+.lista-noticias li a{
+	text-decoration: none;
+}
+
+.img-noticia{
+	float: left;
+    width: 80px;
+	/* margin: 5px; */
+}
+
+.lista-noticias li a h3{
+    float: left;
+	padding: 0;
+	font-size: 0.8em;
+	color: #3e7ab9;
+}
+
+.lista-noticias li a p{
+	font-size: 0.7em;
+}
+
+.lista-noticias li:hover{
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.barra-lateral label{
     font-size: 0.8em;
     width: 100%;
     float: left;
 }
 
-#lfiltro{
+/* #lfiltro{
     font-size: 0.8em;
     width: 100%;
     padding: 5px 0;
     float: left;
-}
+} */
