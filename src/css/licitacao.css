@@ -64,6 +64,8 @@ header{
 	margin-top: 5px;
 }
 
+
+
 /* Formanta lista de notícias */
 
 .lista-noticias{
@@ -108,10 +110,47 @@ header{
 /* ÁREA DE COMENTÁRIOS */
 
 .conteudo-comentarios{
-	height: 300px;
-	border-radius: 8px;
-	border: 6px solid #ccc;
+	height: 100%;
+	border-radius: 6px;
+	border: 4px solid #ccc;
 	background-color: white;
+}
+
+.caixa-comentarios{
+	width: 95%;
+	margin-left: 20px;
+}
+
+.caixa-comentarios > h3{
+	width: 160px;
+	border-bottom: 1px solid;
+	/* margin-left: 10px; */
+}
+
+.comentarios{
+	width: 90%;
+}
+
+.comentarios > img{
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+.comentarios > h5{
+	font-size: 0.9em;;
+	margin-bottom: 0;
+}
+
+.comentarios > span{
+	font-size: 0.7em;
+}
+
+.comentarios p{
+	margin-top: 18px;
+	margin-left: 70px;
+	text-align: justify;
+	font-size: 0.8em;
 }
 
 /* BARRA LATERAL */
