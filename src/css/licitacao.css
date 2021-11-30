@@ -51,58 +51,26 @@ header{
 	max-height: 250px;
 }
 
-.caixa{
-	min-width: 300px;
-	margin: 10px 0;
-	padding: 5px;
-	background: #f3f3f3 url('../imagens/fundo-caixa.png');
-}
-
-.caixa-conteudo{
-	background: #fff;
-	padding: 5px;
-	margin-top: 5px;
-}
-
-
-
 /* Formanta lista de notícias */
 
-.lista-noticias{
-    list-style: none;
+.caixa-noticias img{
+	width: 60px;
+	height: 60px;
 }
 
-.lista-noticias li{
-	padding: 2px;
-    border-bottom: 1px solid #ccc;
-	height: 62px;
+.caixa-noticias li a{
+	padding: 5px;
 }
 
-.lista-noticias li a{
-	float: left;
-	width: 280px;
-	padding: 2px;
-	text-decoration: none;
-}
-
-.img-noticia{
-	float: left;
-    width: 80px;
-	margin-right: 5px;
-}
-
-.lista-noticias li a h3{
-	width: 180px;
-    float: left;
-	font-size: 0.8em;
+.caixa-noticias li a h5{
 	color: midnightblue;
 }
 
-.lista-noticias li a p{
-	font-size: 0.7em;
+.caixa-noticias li a p{
+	font-size: 0.9em;
 }
 
-.lista-noticias li:hover{
+.caixa-noticias li:hover{
 	background-color: #eee;
 	cursor: pointer;
 }
@@ -149,8 +117,14 @@ header{
 .comentarios p{
 	margin-top: 18px;
 	margin-left: 70px;
+	margin-bottom: 10px;
 	text-align: justify;
 	font-size: 0.8em;
+}
+
+.comentarios i{
+	float: right;
+	margin-left: 10px;
 }
 
 /* BARRA LATERAL */
