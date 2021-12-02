@@ -15,13 +15,14 @@ Antônio Eustaquio do Carmo Filho<br>
 Jonatas de Carvalho Brum<br>
 Josefa Sebastião Venâncio da Silva<br>
 Júlio César Borges Lustosa<br>
-Mislene Aparecida Tavares Cota<br>
+Mislene A.Tavares Cota<br>
 Oberdan Ferreira de Souza<br>
 
 
 ## Orientador
 
 * Nome completo do professor 1
+* Sandra Maria Silveira
 
 ## Instruções de utilização
 
