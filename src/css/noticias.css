@@ -33,6 +33,12 @@ header{
     /* background-color: burlywood; */
 }
 
+.container-jumbotron img{
+	width: 30%;
+	height: 180px;
+	float: right;
+}
+
 .pesquisa-pagina{
 	width: 50%;
 	margin: auto;
