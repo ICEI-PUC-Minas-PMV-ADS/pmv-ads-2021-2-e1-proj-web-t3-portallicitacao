@@ -1,20 +1,49 @@
-.navbar{
-	background: #ccd7ee;
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url('../imagens/fundo1.png') repeat-x left top;
 }
 
-#home{
-	height: 320px;
-	padding: 22px 0 12px 0;
-	/* background: #ffd633; */
+.topo{
+	padding: 10px 0 0 0;
+	height: 130px;
+	float: right;
+}
+
+.logo{
+	width: 152px;
+	height: 76px;
+}
+
+.cls-login{
+	margin-top: 60px;
+	width: 50px;
 	color: white;
 }
 
-#logo{
-	max-width: 330px;
+.cls-login span{
+	width: 60px;
 }
 
-.caixa{
-	padding: 30px 0;
-	border-bottom: 1px solid #e5e5e5;
-	background: white;
+.secao-inicial{
+    margin-top: 100px;
+}
+
+.img-fluid{
+    width: 140px;
+    height: 140px;
+}
+
+.img-lei{
+	width: 140px;
+	height: 140px;
+}
+
+.img-proc-licitacao{
+	width: 200px;
+	height: 140px;
+}
+
+.img-newspaper{
+	width: 120px;
+	height: 140px;
 }

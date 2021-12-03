@@ -1,0 +1,76 @@
+/* CSS reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url('../imagens/fundo1.png') repeat-x left top;
+}
+
+header{
+    height: 180px;
+}
+
+.topo{
+	padding: 10px 0 0 0;
+	height: 130px;
+	float: right;
+}
+
+.logo{
+	width: 152px;
+	height: 76px;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.content-licitacao{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	border: 0.1em solid rgb(195, 195, 243);
+	/* background-color: rgb(238, 236, 236); */
+}
+
+/* BARRA LATERAL */
+
+.barra-lateral{
+	background-color:rgb(238, 236, 236);
+	border-radius: 5px;
+	/* border: 1px solid; */
+}
+
+.conteudo-barra-lateral{
+	padding: 5px 0;
+}
+
+.barra-lateral span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: midnightblue;
+	padding-top: 3px;
+	margin-top: 7px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid;
+}
+
+.barra-lateral label{
+	padding-top: 5px;
+    font-size: 0.8em;
+	float: left;
+}
+
+#lfiltro{
+    font-size: 0.8em;
+    width: 100%;
+    padding: 3px 0;
+    float: left;
+}
