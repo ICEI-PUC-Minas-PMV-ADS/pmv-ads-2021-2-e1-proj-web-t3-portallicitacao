@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <!-- Meta tags Obrigatórias -->
         <meta charset="utf-8">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+        
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/licitacao.css">
 
-        <title>Licitações</title>
+        <title>Portal de Licitações</title>
     </head>
     <body>
         <header>
@@ -24,7 +25,7 @@
                     <a href="index.html" class="navbar-brand">
                         <img class="logo" src="imagens/logo.png" alt="logo Portal Licita Brasil"><!-- <img src="imagens/logo/logo-horizontal.png" id="logo"> -->
                     </a>
-        
+
                     <!-- menu hamburguer -->
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                     <span class="navbar-toggler-icon"></span>
@@ -37,13 +38,13 @@
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="servicos.html" class="nav-link">Serviços</a>
+                                <a href="lista-noticias.html" class="nav-link">Notícias</a>
                             </li>
                             <li class="nav-item">
-                                <a href="licitacoes.html" class="nav-link">Licitações públicas</a>
+                                <a href="" class="nav-link">Licitações públicas</a>
                             </li>
                             <li class="nav-item">
-                                <a href="entrar.html" class="nav-link">Entrar</a>
+                                <a href="cadastro-login.html" class="nav-link">Entrar</a>
                             </li>
                         </ul>
                     </div>
@@ -52,89 +53,57 @@
                     </div>
                 </div>
             </nav>
-            <!-- Início do conteiner -->
-            <!-- <div id="container">
-                <div class="row">
-                    <div id="topo" class="col-md-4">
-                        <img class="logo" src="imagens/logo.png" alt="">
-                    </div>
-                    <div class="cls-login col-md-4" align="center">
-                        <span class="far fa-user-circle fa-3x"></span>
-                        <p class="pt-2">Entrar</p>
-                    </div>
-                    <div class="col-md-4" align="center">
-                        <img class="topo" src="imagens/detalhe-topo.png" alt="Continente brasileiro">
-                    </div>
-                </div>
-            </div> -->
         </header>
-        <section>
-            <div class="container marketing secao-inicial">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img class="img-fluid img-lei d-flex" src="imagens/lei.png" alt="Lei sobre licitações">
-                        <h2 class="pt-4">O que é licitação pública</h2>
-                        <p>Licitação é o procedimento administrativo formal regra que se estabelece de forma prévia às contratações de serviços, aquisições de produtos, ou até mesmo para registrar preços para contratações futuras pelos entes da Administração Pública direta ou indireta.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">Ver mais »</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img class="img-fluid img-proc-licitacao pt-4" src="imagens/capa-noticia.jpg" alt="Processos públicos licitatórios">
-                        <h2 class="pt-4">Processos licitatórios</h2>
-                        <p>Licitação ou processos licitatórios são procedimentos no âmbito da administração pública que analisam propostas de fornecedores acerca de produtos ou serviços necessários para o bom funcionamento dos órgãos.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">Ver mais »</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img class="img-fluid img-newspaper pt-4" src="imagens/newspaper.png" alt="Notícias sobre licitações públicas">
-                        <h2 class="pt-4">Notícias</h2>
-                        <p>A Lei 14.133/21, mais conhecida como a nova Lei de Licitações, traz uma série de modificações, a começar pela exigência de mais transparência nas informações.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">Ver mais »</a></p>
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
-              
-                <hr class="featurette-divider">
-        
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Entendendo a lei 8.666. <span class="text-muted"></span></h2>
-                        <p class="lead">Esta Lei estabelece normas gerais sobre licitações e contratos administrativos pertinentes a obras, serviços, inclusive de publicidade, compras, alienações e locações no âmbito dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto" alt="Entendo a nova lei" style="width: 500px; height: 300px;" src="imagens/entendendo-a-lei-8666.jpg" data-holder-rendered="true">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="content-licitacao p-2">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                              <tr>
+                                <th>Órgão público</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Default</td>
+                                <td>Defaultson</td>
+                                <td>def@somemail.com</td>
+                              </tr>      
+                              <tr>
+                                <td>Primary</td>
+                                <td>Joe</td>
+                                <td>joe@example.com</td>
+                              </tr>
+                              <tr>
+                                <td>Success</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
                 </div>
-        
-                <hr class="featurette-divider">
-        
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">O que muda na nova lei sobre processos licitatórios.<span class="text-muted"></span></h2>
-                        <p class="lead">Posto isso, o processo licitatório, segundo a Lei nº 14.133/2021, possui novos critérios de julgamento, além daqueles previsto na legislação anterior, sendo eles, segundo artigo 33, o de maior desconto, melhor técnica ou conteúdo artístico e de maior retorno econômico, além daqueles da Lei 8.666/93: menor preço.</p>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/nova-lei-de-licitacoes.jpg" data-holder-rendered="true" style="width: 500px; height: 300px;">
-                    </div>
+                <div class="barra-lateral col-md-2"> <!-- Barra lateral-->
+                    <aside>
+                        <label for="lfiltro">Tipo de consulta</label>
+                        <select name="" id="lfiltro">
+                            <option value=""></option>
+                            <option value="brasil">Brasil</option>
+                            <option value="brasil">Estados</option>
+                            <option value="brasil">Municipios</option>
+                        </select>
+                    </aside>
                 </div>
-        
-                <hr class="featurette-divider">
-        
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Processo licitatório! <span class="text-muted">Uma nova oportunidade para o seu negócio.</span></h2>
-                        <p class="lead">No mesmo sentido o processo licitatório é conceituado nas palavras de Meirelles, como: O procedimento administrativo mediante o qual a Administração Pública seleciona a proposta.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/chamamento-publico.png" data-holder-rendered="true" style="width: 500px; height: 300px;">
-                    </div>
-                </div>
-                <hr class="featurette-divider">
-        
-              </div>
-        </section>
-        <!-- JavaScript (Opcional) -->
-        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            </div>
+        </div>
     </body>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </html>
