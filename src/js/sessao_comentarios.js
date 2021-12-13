@@ -2,25 +2,58 @@ let areaComentario = document.querySelector("#sessao-comentarios");
 let semComentario = document.querySelector("#sem-comentarios");
 let cxModalMsg = document.querySelector('#cx-msg');
 let lblNomeUsuario = document.querySelector('#lblUsuario');
+let myObjComentario;
 
+var nomeUsuario; // Recebe do localStorage o nome do usuário que fez o comentário
 var txtComentario;
-var abreAreaComentario;
+var abreAreaComentario = '<div class="comentarios mt-3 ml-3 mb-5">';
 var imgComentario;
 var nomeComentario;
 var dataComentario;
 var lnkImgFavoritar;
 var lnkImgCurtir;
-var fechaAreaComentario;
+var fechaAreaComentario = '</div><hr class="featurette-divider"></hr>';
+var contaComentarios = 0;
+
+for (let i = 0; i < localStorage.length; i++){
+    let comentarios = localStorage.key(i);
+    //alert(comentarios.substring(3, 25));
+    if (comentarios.substring(3, 25) == 'tcu-leiloes-aeroportos'){
+        let conteudo = JSON.parse(localStorage.getItem(comentarios));
+        const obj = conteudo;
+        imgComentario = '<img class="img-fluid rounded-circle mr-2" src="' + obj.imagemUsuario + '" alt="">';
+        nomeComentario = '<h5>' + obj.usuario + '</h5>';
+        dataComentario = '<span>Data: ' + obj.dtComentario + '</span>';
+        txtComentario = '<p>' +  obj.textoComentario + '</p>';
+        for (c = 0; c < localStorage.length; c++){
+            let comentarioCurtidas = localStorage.key(c);
+            if (comentarioCurtidas.substring(3, 13) == ('comentario')){ // + i)){
+                let curtida = JSON.parse(localStorage.getItem(comentarioCurtidas));
+                const obj2 = curtida;
+                lnkImgCurtir = '<img src="' + obj2.imgLike + '" alt="Comentário curtido" class="img-fluid img-interacao-rede-social"></span>';
+                lnkImgFavoritar = '<span><img src="' + obj2.imgFavorito + '" alt="Comentário favorito" class="img-fluid img-interacao-rede-social">';
+                c = localStorage.length + 1;
+            }
+        }
+        contaComentarios++;
+        if (contaComentarios == 1){
+            //console.log(areaComentario.innerHTML);
+            areaComentario.innerHTML = areaComentario.innerHTML + abreAreaComentario + imgComentario + nomeComentario + dataComentario +
+                            '<p>'+ txtComentario + '</p>' + lnkImgFavoritar + lnkImgCurtir;
+        }else{
+            //console.log(areaComentario.innerHTML);
+            areaComentario.innerHTML = areaComentario.innerHTML + abreAreaComentario + imgComentario + nomeComentario + dataComentario +
+                            '<p>'+ txtComentario + '</p>' + lnkImgFavoritar + lnkImgCurtir + fechaAreaComentario;
+        }
+    }
+}
 
 function frmComentario(){
-    
-    let myItem = JSON.parse(localStorage.getItem('usuarioLogado'));
-    const obj = myItem
-    
-    // Verifica se há usuário logado. Só pode haver um.
-    if (myItem.nomeUsario != null){
+    nomeUsuario = localStorage.getItem('usuarioLogado');
+
+    if (nomeUsuario != null){
         // Se existe usuário logado, carrega a o formulário (id=janelaModal) para preencher o comentário
-        document.getElementById('inpUsuario').value = myItem.nomeUsario;
+        document.getElementById('inpUsuario').value = nomeUsuario //myItem.usuarioLogado;
         var modalJ = document.getElementById("janelaModal");
         modalJ.style.display = "block";
         // Torna invisível o botão de adicionar comentario
@@ -35,73 +68,56 @@ function frmComentario(){
 }
 
 function criarComentario(){
-    
     var data  = new Date();
     var dia = String(data.getDate()).padStart(2, '0');
     var mes = String(data.getMonth() + 1).padStart(2, '0');
     var ano = data.getFullYear();
     dataAtual = dia + '/' + mes + '/' + ano;
 
-    var hora = data.getHours();    // 0-23
-    var min  = data.getMinutes();  // 0-59
+    var hora = String(data.getHours() + 1).padStart(2, '0');    // 0-23
+    var min  = String(data.getMinutes() + 1).padStart(2, '0');  // 0-59
     var horaAtual = hora + ':' + min;
 
-    abreAreaComentario = '<div class="comentarios mt-4 ml-3">';
-    imgComentario = '<img class="img-fluid rounded-circle mr-2" src="http://source.unsplash.com/random" alt="">';
-    nomeComentario = '<h5>' + document.getElementById('inpUsuario').value + '</h5>';
+    // Prepara as variáveis com as tags e conteúdos para inserir o comentário na página.
+    imgComentario = '<img class="img-fluid rounded-circle mr-2" src="imagens/usuario.jpg" alt="">';
+    nomeComentario = '<h5>' + nomeUsuario + '</h5>';
     dataComentario = '<span>Data: ' + dataAtual + ' - ' + horaAtual + '</span>';
     txtComentario = '<p>' + document.getElementById('txt-comentario').value + '</p>';
     lnkImgFavoritar = '<span class="img-comentarios">' +
-                    '<img src="imagens/heart-regular.svg" alt="Comentário favorito" class="img-fluid img-interacao-rede-social">';
+                   '<img src="imagens/heart-regular.svg" alt="Comentário favorito" class="img-fluid img-interacao-rede-social">';
     lnkImgCurtir = '<img src="imagens/thumbs-up-solid.svg" alt="Comentário curtido" class="img-fluid img-interacao-rede-social"></span>';
-    fechaAreaComentario = '</div><hr class="featurette-divider"></hr>';
 
-    areaComentario.innerHTML = abreAreaComentario + imgComentario + nomeComentario + dataComentario +
-                            '<p>'+ txtComentario + '</p>' + lnkImgFavoritar + lnkImgCurtir + fechaAreaComentario;
-
-    //let myObj = { id: idComentario, name: lblNomeUsuario.innerHTML, comentario: txtComentario.value };
-    //localStorage.setItem('comentario01', JSON.stringify(myObj))
+    //Concatena as variáveis com as tags para a montagem do comentário na tela.
+    areaComentario.innerHTML = areaComentario.innerHTML + abreAreaComentario + imgComentario + nomeComentario + dataComentario + txtComentario + lnkImgFavoritar + lnkImgCurtir + fechaAreaComentario;
+    // Gera a chave de identificação para salvar o comentário no storage
+    geraChaveComentario();
+    // Salva o camentário no localStorage do navegador
+    myObjComentario = { usuario: nomeUsuario, dtComentario: dataComentario, textoComentario: document.getElementById('txt-comentario').value, imagemUsuario: 'imagens/img-usuario-padrao.jpg' };
+    localStorage.setItem(contaComentarios, JSON.stringify(myObjComentario));
 
     var modalJ = document.getElementById("janelaModal");
     modalJ.style.display = "none";
 }
 
-function publicar(){
-
+function geraChaveComentario(){
     var idComentario;
-
+    contaComentarios = 0
     for (let i = 0; i < localStorage.length; i++){
         let key = localStorage.key(i);
-        let value = localStorage.getItem(key);
-        //alert(key.substr(0, 10)); 
-        // if (key.substr(0, 10) == 'comentario'){
-        //     alert('EXISTE ' + ("0" + i).slice(-2));
-        // }else{
-        //     alert('NÃO EXISTE ' + ("0" + i).slice(-2));
-        // }
-        idComentario = key.substring(10, 2);
-      }
-
-    idComentario++;
-    
-    if (idComentario < 10){
-        alert("Novo comentário: " + ("0" + idComentario).slice(-2));
-    }else{
-        alert("Novo comentário: " + (idComentario).slice(-2));
+        if (key.substring(3, 25) == 'tcu-leiloes-aeroportos'){
+            alert('entrou no if')
+            idComentario = key.substring(0, 2);
+            alert(idComentario);
+        }
     }
-    
-    //lblNomeUsuario = document.getElementById('lblUsuario');
-    // var txtComentario = document.getElementById('txt-comentario');
-    
-    // var txtNomeUsuario = 'comentario01';
-
-    // alert(txtNomeUsuario.substr(10,02))
-
-    //let myObj = { id: idComentario, name: lblNomeUsuario.innerHTML, comentario: txtComentario.value };
-    //localStorage.setItem('comentario01', JSON.stringify(myObj))
-    // let myItem = JSON.parse(localStorage.getItem('listaUser'));
-    // const obj = myItem
-    // console.log(obj.comentario);
+    idComentario++;
+    if (idComentario < 10){
+        //alert("Novo comentário: " + ("0" + idComentario).slice(-2));
+        contaComentarios = ("0" + idComentario).slice(-2) + '-tcu-leiloes-aeroportos';
+    }else{
+        //alert("Novo comentário: " + (contaComentarios).slice(-2));
+        contaComentarios = (contaComentarios).slice(-2) + '-tcu-leiloes-aeroportos';
+    }
 }
 
 function fechar() {
@@ -110,9 +126,9 @@ function fechar() {
     modalJ.style.display = "none";
 
     //alert('Chamou a função');
-  //var modalJ = document.getElementById("janelaModal");
-  //var modalB = document.getElementById("btFchar");
-  //modalJ.style.display="none";
+    //var modalJ = document.getElementById("janelaModal");
+    //var modalB = document.getElementById("btFchar");
+    //modalJ.style.display="none";
     
 //   if (localStorage.length > 0) {
 //         alert('Há itens: ');
@@ -125,8 +141,6 @@ function fechar() {
 //     } else {
 //         alert('Não há itens');
 //     }
-
-     
     //let myItem = JSON.parse(localStorage.getItem(key));
 
     //alert(myItem);

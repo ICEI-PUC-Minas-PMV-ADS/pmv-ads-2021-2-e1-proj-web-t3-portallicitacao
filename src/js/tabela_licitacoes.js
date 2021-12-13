@@ -96,3 +96,9 @@ function adicionar_dados(event){
 
 // Rotina Principal
 botao_adicionar.addEventListener('click', adicionar_dados);
+
+function abreIframe(){
+
+    let lista = document.querySelector("#lista_licitacao");
+    lista.src = "http://alertalicitacao.com.br/!estado/MG";
+}

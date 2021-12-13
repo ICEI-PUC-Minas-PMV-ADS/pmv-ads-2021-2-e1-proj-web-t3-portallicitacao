@@ -41,7 +41,7 @@
                                 <a href="lista-noticias.html" class="nav-link">Notícias</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Licitações públicas</a>
+                                <a href="licitacoes.html" class="nav-link">Licitações públicas</a>
                             </li>
                             <li class="nav-item">
                                 <a href="cadastro-login.html" class="nav-link">Entrar</a>
@@ -61,30 +61,33 @@
                         <table class="table table-striped table-hover">
                             <thead>
                               <tr>
-                                <th>Órgão público</th>
-                                <th>Lastname</th>
-                                <th>Email</th>
+                                <th>Estado</th>
+                                <th>Qtde</th>
+                                <th></th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>Default</td>
-                                <td>Defaultson</td>
-                                <td>def@somemail.com</td>
+                                <td>AC</td>
+                                <td>184</td>
+                                <td><a href="http://">Ver detalhes</a></td>
                               </tr>      
                               <tr>
-                                <td>Primary</td>
-                                <td>Joe</td>
-                                <td>joe@example.com</td>
+                                <td>MG</td>
+                                <td>3676</td>
+                                <td><a onclick="abreIframe()" href="">Ver detalhes</a></td>
                               </tr>
                               <tr>
-                                <td>Success</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
+                                <td>PR</td>
+                                <td>3032</td>
+                                <td><a href="http://">Ver detalhes</a></td>
                               </tr>
                             </tbody>
                           </table>
                     </div>
+                    
+
+                    <iframe id="lista_licitacao" src="" frameborder="0"></iframe>
 
                     <form action="">
                         <labe id="etiqueta" for="nome">Nome</labe>
@@ -109,13 +112,44 @@
                 </div>
                 <div class="barra-lateral col-md-2"> <!-- Barra lateral-->
                     <aside>
-                        <label for="lfiltro">Tipo de consulta</label>
+                        <ul class="nav in" id="side-menu">
+                            <!-- <li class="sidebar-search">
+                                <div class="input-group custom-search-form">
+                                    <form id="formBusca" action="/!busca" method="POST">
+                                    <input type="text" class="form-control" name="q" placeholder="Procurar...">
+                                    </form>
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" onclick="document.getElementById('formBusca').submit();">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                                </div>
+                            </li> -->
+                            <li>
+                                <a href="/" class="active"><i class="fa fa-dashboard fa-fw"></i> Painel geral</a>
+                            </li>
+                            <li>
+                                <a href="/!estado" class="active"><i class="fa fa-edit fa-fw"></i> Por Estado</a>
+                            </li>
+                            <li>
+                                <a href="/!tipo"><i class="fa fa-edit fa-fw"></i> Por Modalidade</a>
+                            </li>
+                            <li>
+                                <a href="/!municipios"><i class="fa fa-building fa-fw"></i> Municípios</a>
+                            </li>
+                            <li>
+                                <a href="/!mudancas">
+                                    <i class="fa fa-question-circle fa-fw"></i>Atualizações
+                                </a>
+                            </li>    
+                        </ul>
+                        <!-- <label for="lfiltro">Tipo de consulta</label>
                         <select name="" id="lfiltro">
                             <option value=""></option>
                             <option value="brasil">Brasil</option>
                             <option value="brasil">Estados</option>
                             <option value="brasil">Municipios</option>
-                        </select>
+                        </select> -->
                     </aside>
                 </div>
             </div>
