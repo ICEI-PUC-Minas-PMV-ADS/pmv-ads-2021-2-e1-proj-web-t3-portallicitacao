@@ -93,36 +93,74 @@
                             <div class="row">
                                 <div class="col-md-9 caixa-comentarios">
                                     <h3 class="mt-1 ml-1">Comentários</h3>
-                                    <div class="comentarios mt-3 ml-3 mb-5">
+                                    <div id="sem-comentarios" class="mt-4 mb-4">
+                                        <button class="btn btn-primary" type="button" onclick='frmComentario()'>Adicionar comentário...</button>
+                                    </div>
+                                    <div class="comentarios mt-4 ml-3">
                                         <img class="img-fluid rounded-circle mr-2" src="http://source.unsplash.com/random" alt="">
                                         <h5>Lorem, ipsum dolor.</h5>
                                         <span>Data: 27/11/2021 - 23:15</span>
                                         <p>
                                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facilis illo expedita deleniti assumenda accusamus unde atque illum sunt magnam in, nostrum maiores animi harum labore dolorem aliquam omnis, eligendi est fugit similique voluptates praesentium vel earum? Eos, autem sed!
                                         </p>
-                                        <span>
+                                        <span class="img-comentarios">
                                             <img src="imagens/heart-regular.svg" alt="Comentário favorito" class="img-fluid img-interacao-rede-social">
                                             <img src="imagens/thumbs-up-solid.svg" alt="Comentário curtido" class="img-fluid img-interacao-rede-social">
                                         </span>
                                         
                                     </div>
-                                    <hr class="featurette-divider">
-                                    <div class="comentarios mt-3 ml-3">
+                                    <!-- <hr class="featurette-divider">
+                                    <div class="comentarios mt-4 ml-3">
                                         <img class="img-fluid rounded-circle mr-2" src="http://source.unsplash.com/random" alt="">
                                         <h5>Lorem, ipsum dolor.</h5>
                                         <span>Data: 27/11/2021 - 23:15</span>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates reiciendis fuga. Veniam at quasi velit, non blanditiis dolorum ex eligendi. Quis dignissimos fugit exercitationem voluptates rem ut, quaerat alias!
                                         </p>
-                                        <span>
+                                        <span class="img-comentarios">
                                             <img src="imagens/heart-solid.svg" alt="Comentário favorito" class="img-fluid img-interacao-rede-social">
                                             <img src="imagens/thumbs-up-regular.svg" alt="Comentário curtido" class="img-fluid img-interacao-rede-social">
                                         </span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </section>  <!-- FIM SESSÃO DE COMENTÁRIOS-->
+
+                    <!-- JANELA MODAL PARA -->
+                    <div id="janelaModal" class="clsJanelaModal">
+                        <div class="posFormulario">
+                            <img id="imgModal" src="https://source.unsplash.com/random/60x60" alt="" class="rounded-circle mb-3">
+                            <div class="dados-usuario">
+                                <label id="lblUsuario" for="inpUsuario">Digite o seu nome</label>
+                                <input type="text" id="inpUsuario">
+                            </div>
+                            <textarea name="txt-comentario" id="txt-comentario" class="form-control" cols="35" rows="4"></textarea>    
+                            <div class="botoes mt-4">
+                                <button class="btn btn-primary mr-4" type="button" onclick='criarComentario()'>Publicar</button>
+                                <button class="btn btn-outline-dark" type="button" onclick='fechar()'>Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JANELA MODAL PARA MENSAGENS -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 id="tituloJanelaModal" class="modal-title"></h4>
+                                </div>
+                                <!-- Modal body -->
+                                <div id="cx-msg" class="modal-body"></div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Sim</button> <!--data-dismiss="modal"-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button> <!--data-dismiss="modal"-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <section>  <!-- INICIO SESSÃO DE LISTA DE NOTÍCIAS-->
                         <div class="row">
@@ -198,5 +236,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/aed20157da.js" crossorigin="anonymous"></script>
+    <script src="js/sessao_comentarios.js"></script>
 
 </html>
