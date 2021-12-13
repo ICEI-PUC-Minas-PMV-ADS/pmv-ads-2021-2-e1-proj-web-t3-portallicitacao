@@ -130,12 +130,29 @@ header{
 }
 
 .comentarios > h5{
-	font-size: 0.9em;;
+	font-size: 0.9em;
 	margin-bottom: 0;
+}
+
+.comentarios p{
+	margin-top: 18px;
+	margin-left: 70px;
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 0.8em;
 }
 
 .comentarios > span{
 	font-size: 0.7em;
+}
+
+.comentarios span > .img-interacao-rede-social{
+	width: 15px;
+	margin-left: 10px;
+}
+
+.img-comentarios{
+	margin-left: 60px;
 }
 
 .comentarios p{
@@ -148,7 +165,6 @@ header{
 
 .comentarios span > .img-interacao-rede-social{
 	width: 15px;
-	float: right;
 	margin-left: 10px;
 }
 
@@ -186,4 +202,62 @@ header{
     width: 100%;
     padding: 3px 0;
     float: left;
+}
+
+/* JANELA MODAL PARA REGISTRAR COMENTÁRIOS */
+
+#janelaModal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 6%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(165, 165, 165, 0.8);
+	overflow: auto;
+}
+
+.posFormulario{
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	padding: 50px;
+	height: 450px;
+	width: 600px;
+}
+
+#imgModal{
+	display: inline;
+	margin: auto;
+	margin-top: 50px;
+	width: 60px;
+	height: 60px;
+}
+
+.dados-usuario{
+	width: 430px;
+	float: right;
+	margin-top: 50px;
+}
+
+#lblUsuario, #inpUsuario{
+	display: block;
+	width: 70%;
+}
+
+#inpUsuario{
+	border-radius: 3px;
+	border-color: #ccc;
+}
+
+.posFormulario > textarea{
+	display: block;
+	width: 500px;
+	margin: auto;
+}
+
+.botoes{
+	float: right;
 }
