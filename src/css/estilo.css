@@ -24,8 +24,20 @@ body{
 	width: 60px;
 }
 
-.secao-inicial{
-    margin-top: 100px;
+.content{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.pesquisa-pagina{
+	width: 50%;
+	margin: auto;
+}
+
+.btn-pesquisa{
+	background-color: rgb(87, 87, 156);
+	color: white;
 }
 
 .img-fluid{
