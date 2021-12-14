@@ -57,13 +57,18 @@ function frmComentario(){
         var modalJ = document.getElementById("janelaModal");
         modalJ.style.display = "block";
         // Torna invisível o botão de adicionar comentario
-        document.getElementById('sem-comentarios').style.display = "none";
+        //document.getElementById('sem-comentarios').style.display = "none";
     }else{
+        // Se existe usuário logado, carrega a o formulário (id=janelaModal) para preencher o comentário
+        document.getElementById('inpUsuario').value = 'Anonymous@Anonymous';
+        nomeUsuario = 'Anonymous@Anonymous'
+        var modalJ = document.getElementById("janelaModal");
+        modalJ.style.display = "block";
         // Se não há usuário logado, abre uma caixa de mensagem para o visitante comunicando a necessidade de estar logado.
         // Nesta mesma caixa de mensagem, pergunta se o usuário deseja fazer o login.
-        document.getElementById('tituloJanelaModal').innerHTML = "Usuário não encontrado";
-        cxModalMsg.innerHTML = "Para fazer um comentário você deve fazer o login primeiro.<br>Você deseja fazer o login agora?";
-        $('#myModal').modal('show');
+        // document.getElementById('tituloJanelaModal').innerHTML = "Usuário não encontrado";
+        // cxModalMsg.innerHTML = "Para fazer um comentário você deve fazer o login primeiro.<br>Você deseja fazer o login agora?";
+        // $('#myModal').modal('show');
     }
 }
 
@@ -105,9 +110,7 @@ function geraChaveComentario(){
     for (let i = 0; i < localStorage.length; i++){
         let key = localStorage.key(i);
         if (key.substring(3, 25) == 'tcu-leiloes-aeroportos'){
-            alert('entrou no if')
             idComentario = key.substring(0, 2);
-            alert(idComentario);
         }
     }
     idComentario++;

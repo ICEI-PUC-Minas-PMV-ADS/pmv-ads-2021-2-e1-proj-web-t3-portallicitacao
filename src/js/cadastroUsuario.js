@@ -27,7 +27,7 @@ nome.addEventListener('keyup', () => {
         nome.setAttribute('style', 'border-color: #bebcbc')
         validNome = true
     } else {
-        if(nome.value.length <= 2){
+        if(nome.value.length <= 2) {
             labelNome.setAttribute('style', 'color: red')
             labelNome.innerHTML = 'Nome *Insira no minimo 5 caracteres'
             nome.setAttribute('style', 'border-color: red')
